@@ -1,0 +1,206 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	padding: 30px;
+	border: 1px solid;
+	display: flex;
+	justify-content: center;
+	background-color: #274b7b;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 3;
+}
+
+header nav {
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vs-lesson__logo {
+	width: 48px;
+	height: 48px;
+}
+
+.vs-lesson__logo img {
+	width: 100%;
+}
+
+header ul {
+	list-style: none;
+	display: flex;
+	column-gap: 20px;
+}
+
+header ul a {
+	color: white;
+	transition-duration: 0.4s;
+}
+
+header ul a:hover {
+	background-color: #49b6e1;
+}
+
+.vs-lesson__nav-languages {
+	display: flex;
+	gap: 20px;
+}
+
+section {
+	display: flex;
+	margin-top: 98px;
+}
+
+.vs-lesson__advertisement {
+	width: 100px;
+	height: 100%;
+}
+
+.vs-lesson__section {
+	width: calc(100% - 200px);
+}
+
+.vs-lesson__home-info {
+	padding: 100px;
+}
+
+.main__title-office-name {
+	font-family: font-family: 'Handlee', cursive;
+}
+
+.vs-lesson__home-info h1 {
+	font-size: 70px;
+	color: #49b6e1;
+	text-align: center;
+}
+
+.vs-lesson-section__nav svg {
+	width: 48px;
+	height: 48px;
+}
+
+.vs-lesson-section__nav {
+	background-color: black;
+	padding: 100px;
+}
+
+.vs-lesson-section__nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.vs-lesson-section-nav__app {
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	margin: 30px;
+	background-color: white;
+	transform: rotate(-30deg) skewX(25deg) translate(0,0);
+	box-shadow: -20px 20px 10px black;
+	position: relative;
+}
+
+.vs-lesson-section-nav__app::before {
+	content: '';
+	width: 20px;
+	height: 100%;
+	position: absolute;
+	transform: rotate(0deg) skewY(-45deg) translate(-40px,-50px);
+	background-color: white;
+	transition-duration: 0.2s;
+}
+
+.vs-lesson-section-nav__app::after {
+	content: '';
+	width: 100%;
+	height: 24%;
+	position: absolute;
+	transform: rotate(0deg) skewX(-45deg) translate(-22px,8px);
+	background-color: white;
+	transition-duration: 0.2s;
+}
+
+.vs-lesson-section-nav__app {
+	transition-duration: 0.8s;
+}
+
+.vs-lesson-section-nav__app:hover {
+	transform: rotate(-30deg) skewX(25deg) translate(20px,-20px);
+}
+
+
+.vs-lesson-section-nav__app,
+.vs-lesson-section-nav__app svg path:first-child {
+	transition-duration: 0.2s;
+}
+
+.facebook__app:hover.facebook__app::after,.facebook__app:hover.facebook__app::before,.facebook__app:hover.facebook__app,.facebook__app:hover.facebook__app svg path:first-child{
+	fill: white;
+	background-color: #4169E1;
+}
+.facebook__app:hover.facebook__app svg path:last-child{
+	fill: #4169E1;
+}
+
+.facebook__app:hover.facebook__app svg path{
+	fill: black;
+}
+
+.instagram__app:hover.instagram__app::after,.instagram__app:hover.instagram__app::before,.instagram__app:hover.instagram__app,.instagram__app:hover.instagram__app svg path:first-child{
+	fill: white;
+	background: linear-gradient(188deg, rgba(68,1,128,1) 0%, rgb(248 152 8) 100%);
+}
+
+.whats__app:hover.whats__app::after,.whats__app:hover.whats__app::before,.whats__app:hover.whats__app,.whats__app:hover.whats__app svg path:first-child{
+	fill: white;
+	background: #4AAE20;
+}
+
+.viber__app:hover.viber__app::after,.viber__app:hover.viber__app::before,.viber__app:hover.viber__app,.viber__app:hover.viber__app svg path:first-child{
+	fill: white;
+	background: #511290;
+}
+
+.gmail__app:hover.gmail__app::after,.gmail__app:hover.gmail__app::before,.gmail__app:hover.gmail__app,.gmail__app:hover.gmail__app svg path:nth-child(5),.gmail__app:hover.gmail__app svg path:nth-child(7){
+	fill: #D32E2A;
+	background: #008807;
+}
+footer{
+	background-color: #49B6E1;
+	padding: 30px;
+}
+
+footer ul{
+	list-style: none;
+	color: white;
+}
+
+.vs-lesson-footer__content{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0px;
+	width: 100%;
+}
+.vs-lesson__copyright div{
+	color: white;
+	padding: 10px 0;
+}
+footer svg{
+	width: 32px;
+	height: 32px;
+}
+footer ul:last-child{
+	display: flex;
+	gap: 20px;
+}

@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    padding: 30px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    background-color: #274b7b;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vs-lesson__logo{
+    width: 48px;
+    height: 48px;
+}
+.vs-lesson__logo img{
+    width: 100%;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+}
+
+header ul a{
+    color: white;
+    transition-duration: 0.4s;
+}
+
+header ul a:hover{
+    background-color: #49b6e1;
+}
+
+.vs-lesson__nav-languages{
+    display: flex;
+    gap: 20px;
+}
+
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+
+section{
+    margin-top: 101px;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.vs-lesson__contact-title{
+    text-align: center;
+}
+
+.vs-lesson__contact-title h1{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.vs-lesson__contact-main{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+    align-items: center;
+}
+
+.vs-lesson__contact-info{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.vs-lesson__contact-info .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.vs-lesson__contact-info .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 28px;
+}
+
+.vs-lesson__contact-info .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: black;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.vs-lesson__contact-info .text h3{
+    font-weight: 600;
+    font-size: 20px;
+    color: #217783;
+}
+
+.vs-lesson__contact-info .icon a{
+    color: black;
+}
+
+.vs-lesson__contact-form{
+    width: 370px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.vs-lesson__contact-form h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.vs-lesson__contact-form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.vs-lesson__contact-form .inputBox textarea{
+    min-height: 40px;
+    height: 40px;
+}
+
+.vs-lesson__contact-form input,
+.vs-lesson__contact-form textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #333;
+}
+
+.vs-lesson__contact-form span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.vs-lesson__contact-form input:focus ~ span,
+.vs-lesson__contact-form input:valid ~ span,
+.vs-lesson__contact-form textarea:focus ~ span,
+.vs-lesson__contact-form textarea:valid ~ span{
+    color: #92bbeb;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+}
+
+.vs-lesson__contact-form input[type="submit"]{
+    width: 100%;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+footer{
+    background-color: #49B6E1;
+    padding: 30px;
+}
+
+footer ul{
+    list-style: none;
+    color: white;
+}
+
+.vs-lesson-footer__content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    width: 100%;
+}
+.vs-lesson__copyright div{
+    color: white;
+    padding: 10px 0;
+}
+footer svg{
+    width: 32px;
+    height: 32px;
+}
+footer ul:last-child{
+    display: flex;
+    gap: 20px;
+}
+

@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	padding: 30px;
+	border: 1px solid;
+	display: flex;
+	justify-content: center;
+	background-color: #274b7b;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 3;
+}
+
+header nav {
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vs-lesson__logo {
+	width: 48px;
+	height: 48px;
+}
+
+.vs-lesson__logo img {
+	width: 100%;
+}
+
+header ul {
+	list-style: none;
+	display: flex;
+	column-gap: 20px;
+}
+
+header ul a {
+	color: white;
+	transition-duration: 0.4s;
+}
+
+header ul a:hover {
+	background-color: #49b6e1;
+}
+
+.vs-lesson__nav-languages {
+	display: flex;
+	gap: 20px;
+}
+
+section {
+	margin-top: 110px;
+}
+
+.vs-lesson__about-section {
+	padding: 30px;
+}
+
+.vs-lesson__about-section p {
+	font-size: 22px;
+}
+
+.firs-image__group img {
+	width: 200px;
+	height: 200px;
+	border: 1px solid magenta;
+}
+
+footer {
+	background-color: #49B6E1;
+	padding: 30px;
+}
+ 
+footer ul {
+	list-style: none;
+	color: white;
+}
+
+.vs-lesson-footer__content {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0px;
+	width: 100%;
+}
+
+.vs-lesson__copyright div {
+	color: white;
+	padding: 10px 0;
+}
+
+footer svg {
+	width: 32px;
+	height: 32px;
+}
+
+footer ul:last-child {
+	display: flex;
+	gap: 20px;
+}

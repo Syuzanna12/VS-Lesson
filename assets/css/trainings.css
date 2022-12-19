@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+header{
+	padding: 30px;
+	border: 1px solid;
+	display: flex;
+	justify-content: center;
+	background-color: #274b7b;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 3;
+}
+header nav{
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vs-lesson__logo{
+	width: 48px;
+	height: 48px;
+}
+.vs-lesson__logo img{
+	width: 100%;
+}
+
+header ul{
+	list-style: none;
+	display: flex;
+	column-gap: 20px;
+}
+
+header ul a{
+	color: white;
+	transition-duration: 0.4s;
+}
+
+header ul a:hover{
+	background-color: #49b6e1;
+}
+
+.vs-lesson__nav-languages{
+	display: flex;
+	gap: 20px;
+}
+
+
+section{
+	margin-top: 98px;
+}
+.vs-lesson__cards{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	padding: 30px;
+}
+.card{
+	flex-basis: calc(33.33% - 80px/3);
+	border: 1px solid silver;
+	border-radius: 5px;
+	overflow: hidden;
+	transition-duration: 0.5s;
+}
+.card img{
+	width: 100%;
+}
+.card button{
+	color: #274b7b;
+	position: relative;
+	background: none;
+	border: none;
+	cursor: pointer;
+	width: 150px;
+	padding: 10px 15px;
+	margin: 0 auto;
+}
+.card button:hover::after{
+	transition-duration: 0.8s;
+	content: '';
+	position: absolute;
+	left: 130px;
+	top: 7px;
+	width: 24px;
+	height: 24px;
+	background-image: url("../images/icon-right.png");
+}
+.vs-lesson-card__info{
+	width: 100%;
+	height: calc(100% - 244px);
+	text-align: center;
+	padding: 10px 55px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.vs-lesson-card__info p{
+	text-align: justify;
+	margin-bottom: 10px;
+}
+.vs-lesson-card__info p span{
+	font-family: 'Handlee', cursive;
+	font-weight: 600;
+}
+
+footer{
+	background-color: #49B6E1;
+	padding: 30px;
+}
+
+footer ul{
+	list-style: none;
+	color: white;
+}
+
+.vs-lesson-footer__content{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0px;
+	width: 100%;
+}
+.vs-lesson__copyright div{
+	color: white;
+	padding: 10px 0;
+}
+footer svg{
+	width: 32px;
+	height: 32px;
+}
+footer ul:last-child{
+	display: flex;
+	gap: 20px;
+}
